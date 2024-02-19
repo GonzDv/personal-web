@@ -1,0 +1,72 @@
+---
+import LinkedIn from '../icons/LinkedIn.astro';
+---
+
+<style>
+	.hero-container {
+		height: 70vh;
+		padding: 150px 75px;
+		margin-left: 25%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: left;
+	}
+	#typewriter {
+		color: #0072ef;
+	}
+	#cursor {
+		position: relative;
+		color: #0072ef;
+	}
+	#cursor::before {
+		content: '';
+		right: -6px;
+		top: 50%;
+		position: absolute;
+		height: 30px;
+		width: 3px;
+		background: #0072ef;
+		transform: translateY(-45%);
+		animation: blink 1s linear infinite;
+	}
+	@keyframes blink {
+		0% {
+			opacity: 100%;
+		}
+		50% {
+			opacity: 0%;
+		}
+	}
+</style>
+<div class='hero-container'>
+	<h1>
+		Hey, I'm Julian✌️<br />
+		<span id='typewriter'></span>
+		<span id='cursor'></span>
+	</h1>
+	<div>
+		<p class='email'>
+			juliangnzv@gmail.com <button class='copy-email'>copy</button>
+		</p>
+		<a href=''>View CV</a>
+	</div>
+</div>
+<div>
+	<img src='' alt='Foto de Julian' />
+</div>
+
+<script>
+	var p = document.getElementById('typewriter');
+	var text = '<Student Web Developer />'; /* The text */
+
+	function textTypingEffect(element, text, i = 0) {
+		element.textContent += text[i];
+
+		if (i === text.length - 1) {
+			return;
+		}
+		setTimeout(() => textTypingEffect(p, text, i + 1), 50);
+	}
+	textTypingEffect(p, text);
+</script>
