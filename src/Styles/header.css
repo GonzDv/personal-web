@@ -1,15 +1,52 @@
 .header {
-	width: 100%;
-	height: 100%;
-	padding: 0 50px;
+	overflow: hidden;
 	background: #0072ef;
 	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	padding: 20px 10px;
 }
 
-.header a,
-li {
+.header h1 {
+	float: left;
+	font-weight: bold;
+}
+.header a {
 	color: white;
+	float: left;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+
+	border-radius: 6px;
+}
+.header a:hover {
+	background-color: white;
+	color: #0072ef;
+}
+
+.header a.active {
+	background-color: white;
+	color: dodgerblue;
+}
+
+.header-right {
+	float: right;
+}
+
+/* Medias Queries */
+
+/* Large desktop */
+@media (min-width: 1200px) {
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
 }

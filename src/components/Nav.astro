@@ -15,15 +15,19 @@ import GitHub from '../icons/GitHub.astro';
 	li {
 		margin: 10px;
 	}
+
+	.social-media {
+		display: flex;
+		align-items: center;
+	}
 </style>
 <div class='nav-links'>
 	<ul>
-		<li><a href=''>Home</a></li>
+		<li><a class='active' href=''>Home</a></li>
 		<li><a href='#Projects'>Projects</a></li>
 		<li><a href='#About'>About me</a></li>
 		<li><a href=''>Contact</a></li>
-
-		<li><a href=''><LinkedIn /></a></li>
-		<li><a href=''><GitHub /></a></li>
+		<li><a class='social-media' href=''><LinkedIn /></a></li>
+		<li><a class='social-media' href=''><GitHub /></a></li>
 	</ul>
 </div>

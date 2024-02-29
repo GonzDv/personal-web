@@ -3,7 +3,13 @@ import Nav from './Nav.astro';
 import '../Styles/header.css';
 ---
 
+<script>
+	// burger
+	const links = document.getElementById('burger');
+</script>
 <div class='header'>
 	<h1>Julian Gnz</h1>
-	<Nav />
+	<div id='buger' class='header-right'>
+		<Nav />
+	</div>
 </div>
